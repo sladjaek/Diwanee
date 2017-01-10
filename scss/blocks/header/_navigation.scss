@@ -1,0 +1,54 @@
+.nav {
+  &__mobile-menu{
+    display: none;
+    @include breakpoint (phone){
+        display: block;
+        float: right;
+        width: 33px;
+        height: 33px;
+    }
+  }
+  &__mobile-menu-close{
+    display: none;
+    @include breakpoint (phone){
+        display: none;
+        float: right;
+        width: 33px;
+        height: 33px;
+    }
+  }
+  &__logo{
+      display: inline-block;
+  }
+  &__navigation{
+    float: right;
+    padding-top: 10px;
+    @include breakpoint (phone){
+        display:none;
+        float: none;
+        z-index: 1;
+        position: relative;
+        background-color: #363636;
+        z-index: 2;
+    }
+    li{
+      text-transform: uppercase;
+      text-align: center;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      color: #333333;
+      letter-spacing: 3.8px;
+      display: inline;
+      list-style-type: none;
+      margin: 0 28px;
+      @include breakpoint(phone){
+          display: block;
+          padding: 20px 0;
+          border-bottom: 1px solid #909598;
+          margin: 0;
+          color: white;
+      }
+    }
+  }
+}

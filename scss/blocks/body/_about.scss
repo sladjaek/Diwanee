@@ -1,0 +1,66 @@
+.about {
+  &__development,
+  &__design,
+  &__work{
+      width:33.33%;
+      display: inline-block;
+      text-align: center;
+      vertical-align: top;
+      padding-top: 10%;
+      padding-bottom: 5%;
+      float: left;
+      @include breakpoint (phone){
+          display: block;
+          width: 100%;
+          float: none;
+      }
+      img{
+          margin:0 auto;
+      }
+      h1{
+          color: #333333;
+          font-family: 'Source Sans Pro', sans-serif;
+          font-weight: 600;
+          font-size: 24px;
+          letter-spacing: 4px;
+          line-height: 30px;
+          margin-top: 7%;
+          text-transform: uppercase;
+      }
+      p{
+          padding: 0 4%;
+          color: #868f94;
+          font-family: 'Source Sans Pro', sans-serif;
+          font-weight: 400;
+          padding-top: 3%;
+          font-size: 19px;
+          line-height: 50px;
+      }
+  }
+  &__design{
+    background-color:#ededed;
+  }
+
+  &__development{
+    background-image: url("../img/triangle-white.png");
+    background-size: auto;
+    background-position: -310% 10%;
+    background-color: #fbfbfb;
+    background-repeat: no-repeat;
+  }
+  &__work{
+    background-image: url("../img/square-white.png");
+    background-size: auto;
+    background-position: -290% 0;
+    background-color: #fbfbfb;
+    background-repeat: no-repeat;
+  }
+  span{
+      display: inline-block;
+      text-align: center;
+      width: 40px;
+      height: 2px;
+      background-color: #cbcbcb;
+      margin-top: 5%;
+  }
+}

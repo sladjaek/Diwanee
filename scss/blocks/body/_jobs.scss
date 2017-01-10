@@ -1,0 +1,184 @@
+.jobs{
+  text-align: center;
+  clear: both;
+  &__headline{
+      p{
+          font-family: 'Source Sans Pro-Light', sans-serif;
+          font-size: 33px;
+          color: #333333;
+          line-height: 50px;
+          padding: 3%  22%;
+          padding-bottom: 6%;
+          @include breakpoint(phone){
+              padding: 3% 20px;
+              font-size: 18px;
+              line-height: 25px;
+              margin-bottom: 30px;
+          }
+      }
+  }
+  &__dash{
+      display: inline-block;
+      width: 65px;
+      text-align: center;
+      background-color: #C41230;
+      border: 1px solid #C41230;
+      margin-top: 3%;
+  }
+  h5{
+    color: #afadb2;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-top: 130px;
+    margin-bottom: 30px;
+    @include breakpoint (phone){
+        padding-top: 60px;
+        margin-bottom: 0;
+    }
+  }
+  h1{
+    color: #353334;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro-Semibold', sans-serif;
+    font-size: 60px;
+    letter-spacing: 3px;
+    line-height: 75px;
+    @include breakpoint (phone){
+        font-size: 24px;
+    }
+  }
+  &__left,
+  &__right{
+      display: inline-block;
+      vertical-align: middle;
+  }
+  &__left{
+      width: 65%;
+      @include breakpoint(phone){
+          width: 100%;
+      }
+  }
+  &__right{
+      width: 30%;
+      text-align: center;
+  }
+  &__frontend,
+  &__designer{
+      @include breakpoint(phone){
+          background-color: #f8f7f5;
+      }
+  }
+  &__frontend,
+  &__manager,
+  &__designer{
+      padding: 5% 14% 5% 24%;
+      text-align: left;
+      transition: all .3s ease;
+      cursor: pointer;
+      @include breakpoint (phone){
+          padding: 10px 20px;
+      }
+      h3{
+        text-transform: uppercase;
+        font-family: 'Source Sans Pro-Semibold', sans-serif;
+        font-size: 28px;
+        color: #333333;
+        letter-spacing: 2.33px;
+        line-height: 36px;
+        margin-bottom: 40px;
+        @include breakpoint(phone){
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+      }
+      span{
+          display: inline-block;
+          vertical-align: middle;
+          border: 1px solid #979797;
+          font-family: 'Source Sans Pro-Semibold', sans-serif;
+          font-size: 16px;
+          color: #333;
+          line-height: 28px;
+          letter-spacing: 2px;
+          padding: 0 1%;
+          text-transform: uppercase;
+      }
+      p{
+          display: inline-block;
+          vertical-align: middle;
+          font-family: 'Source Sans Pro-Semibold', sans-serif;
+          font-size: 18px;
+          color: #988179;
+          letter-spacing: 1px;
+          margin-bottom: 40px;
+          width: 80%;
+          @include breakpoint(phone){
+              width: 100%;
+              font-size: 12px;
+              margin-bottom: 10px;
+          }
+      }
+  }
+  li{
+    display: inline-block;
+    width: auto;
+    text-transform: uppercase;
+    border: 1px solid #979797;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #C41230;
+    letter-spacing: 2px;
+    list-style-type: none;
+    text-align: center;
+    margin-right: 5px;
+    padding: 5px 10px;
+    @include breakpoint(phone){
+        border-style: none;
+        font-size: 15px;
+        text-align: justify;
+        padding: 0;
+    }
+  }
+  .button{
+      border: 1px solid #e4e4e4;
+      padding: 10px 30px;
+      @include breakpoint(phone){
+          display: none;
+      }
+  }
+  &__load{
+      display: inline-block;
+      font-family: 'Source Sans Pro-Semibold', sans-serif;
+      font-size: 16px;
+      color: #333;
+      line-height: 28px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 4%;
+      margin-bottom: 12%;
+      cursor: pointer;
+      @include breakpoint(phone){
+          display: block !important;
+          font-size: 12px;
+          width: 80%;
+          margin: 4% auto;
+      }
+  }
+}
+
+.jobs__frontend:hover, .jobs__manager:hover, .jobs__designer:hover {
+  background-color: #333333;
+}
+
+.jobs__frontend:hover,
+.jobs__manager:hover,
+.jobs__designer:hover{
+    h3,
+    p,
+    span,
+    li{
+        color:white;
+        border-color: white;
+    }
+}

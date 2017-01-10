@@ -1,0 +1,31 @@
+/*------------------------------------------------------------------------------
+*    CSS Document (http://www.w3.org/Style/CSS/)
+*    For STYLEGUIDE, reffer to /config/_styleguide.scss
+-----------------------------------------------------------------------------*/
+
+//------ALL VARIABLES
+@import 'config/variables';
+
+//------MIXINS
+@import 'mixins/breakpoints';
+
+//------MAIN CONFIG
+@import 'config/reset';
+@import 'config/baseConfig';
+@import 'config/helpers';
+
+
+//------COMPONENTS
+
+//------HEADER
+@import 'blocks/header/header';
+@import 'blocks/header/navigation';
+
+//------BODY
+@import 'blocks/body/about';
+@import 'blocks/body/jobs';
+@import 'blocks/body/digital';
+
+
+//------FOOTER
+@import 'blocks/footer/footer';

@@ -1,0 +1,71 @@
+//-------------------------
+//-------------------HEADER
+//-------------------------
+header{
+    padding: 2% 18%;
+    background-image: url(../img/diwanee-cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f2ece0;
+    height: 900px;
+    position: relative;
+    background-position: 50%;
+    @include breakpoint(phone){
+        height: 540px;
+        padding: 20px 10px;
+    }
+.header__holder{
+      text-align: center;
+      position: absolute;
+      top: 31.6%;
+      left: 25%;
+      right: 25%;
+      @include breakpoint (phone){
+          top: 15%;
+      }
+      h1{
+          font-family: 'Source Sans Pro', sans-serif;
+          font-weight: 600;
+          font-size: 90px;
+          color: #333;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          @include breakpoint(phone){
+              font-size: 40px;
+          }
+      }
+      h2{
+        display: none;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 400;
+        @include breakpoint (phone){
+            display: block;
+            margin-top: 40px;
+            font-size: 26px;
+            text-transform: uppercase;
+        }
+      }
+      p{
+          font-family: 'Source Sans Pro', sans-serif;
+          font-weight: 400;
+          font-size: 25px;
+          color: #333;
+          letter-spacing: 1px;
+          line-height: 40px;
+          width: 70%;
+          margin: auto;
+          margin-top: 55px;
+           @include breakpoint(phone){
+               display: none;
+           }
+      }
+  .dash{
+        display: block;
+        width: 50px;
+        margin: 0 auto;
+        margin-top: 31px;
+        border: 2px solid #C41230;
+        background-color: #C41230;
+  }
+}
+}
